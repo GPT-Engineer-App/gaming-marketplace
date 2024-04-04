@@ -31,6 +31,20 @@ const games = [
     price: 39.99,
     image: "https://images.unsplash.com/photo-1500099817043-86d46000d58f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxycGclMjBnYW1lJTIwY292ZXJ8ZW58MHx8fHwxNzEyMjQwMjAzfDA&ixlib=rb-4.0.3&q=80&w=1080",
   },
+  {
+    id: 5,
+    title: "Game 5",
+    genre: "Thriller",
+    price: 29.99,
+    image: "https://images.unsplash.com/photo-1555661530-68c8e98db4e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHx0aHJpbGxlciUyMGdhbWUlMjBjb3ZlcnxlbnwwfHx8fDE3MTIyNDAyMDN8MA&ixlib=rb-4.0.3&q=80&w=1080",
+  },
+  {
+    id: 6,
+    title: "Game 6",
+    genre: "Shooter",
+    price: 24.99,
+    image: "https://images.unsplash.com/photo-1581647405960-0c6f7d0b6c0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxzaG9vdGVyJTIwZ2FtZSUyMGNvdmVyfGVufDB8fHx8MTcxMjI0MDIwM3ww&ixlib=rb-4.0.3&q=80&w=1080",
+  },
 ];
 
 const Index = () => {
@@ -79,6 +93,8 @@ const Index = () => {
           <option value="Adventure">Adventure</option>
           <option value="Strategy">Strategy</option>
           <option value="RPG">RPG</option>
+          <option value="Thriller">Thriller</option>
+          <option value="Shooter">Shooter</option>
         </Select>
       </Box>
       <Grid templateColumns="repeat(4, 1fr)" gap={8}>
@@ -128,6 +144,8 @@ const Index = () => {
           <option value="Adventure">Adventure</option>
           <option value="Strategy">Strategy</option>
           <option value="RPG">RPG</option>
+          <option value="Thriller">Thriller</option>
+          <option value="Shooter">Shooter</option>
         </Select>
         <Input placeholder="Price" type="number" mb={4} />
         <Checkbox isChecked={isPromoted} onChange={(e) => setIsPromoted(e.target.checked)} mb={4}>
